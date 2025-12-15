@@ -1,0 +1,14 @@
+﻿@model AppWeb1.Models.TaskItem
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Editar</h2>
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <input class="form-control mb-2" asp-for="Titulo" />
+    <div class="form-check mb-2">
+        <input class="form-check-input" asp-for="Completado" />
+        <label class="form-check-label">Completada</label>
+    </div>
+    <button class="btn btn-primary">Actualizar</button>
+</form>

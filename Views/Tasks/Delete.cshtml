@@ -1,0 +1,10 @@
+﻿@model AppWeb1.Models.TaskItem
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Eliminar</h2>
+<p>@Model.Titulo</p>
+<form method="post">
+    <button class="btn btn-danger">Eliminar</button>
+    <a class="btn btn-secondary" href="/Tasks">Cancelar</a>
+</form>
